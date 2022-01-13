@@ -61,10 +61,22 @@ this appears: 3 times.
 ``
 
 ## Ex. 4
+Write a function named: `student{YOUR STUDENT ID}LongestString` that returns the longest string from an array of strings:
 
+Example usages:
+```
+array = ['this', 'is', 'a', 'test', 'happy'];
+console.log(student1LongestString(array));
+```
 
+Example output:
+```
+happy
+```
 
 ## Ex. 5
+
+
 
 ## Ex. 6
 

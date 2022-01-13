@@ -65,7 +65,8 @@ let ex3 = () => {
 let ex4 = () => {
     console.log('*** Ex. 4 ***');
 
-    
+    array = ['this', 'is', 'a', 'test', 'happy'];
+    console.log(student0LongestString(array));
 }
 
 let ex5 = () => {
@@ -93,8 +94,22 @@ let ex10 = () => {
 }
 
 const main = async () =>{
-    ex3();
+    ex4();
 }
+
+//
+// Your functions here...
+//
+
+const student0LongestString = (arr) => {
+	let longest = ''; 
+	arr.forEach(item => {
+		if(item.length > longest.length) {
+            longest = item;
+        }
+	});
+	return longest; 
+};
 
 main();
 
