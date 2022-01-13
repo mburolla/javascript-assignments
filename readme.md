@@ -17,13 +17,38 @@ Given the following dictionary:
 
 Display the total age on the console:
 
+Example output:
 ```
 The total age is: 60.
 ```
 
 ## Ex. 2
 
+Given the following data:
+
+```
+    let customers = [{
+        name: 'ABC Inc',
+        credit: 100
+    }, {
+        name: 'ACME Corp',
+        credit: 200
+    }, {
+        name: 'IoT AG',
+        credit: 300
+    }];
+```
+
+Display the item whose credit is 200, do not use a for loop.
+
+Example output:
+```
+{ name: 'ACME Corp', credit: 200 }
+```
+
 ## Ex. 3
+
+
 
 ## Ex. 4
 

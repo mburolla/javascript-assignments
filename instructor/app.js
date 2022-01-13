@@ -24,7 +24,7 @@ let ex1 = () => {
         {"firstName": "fred", "lastName": "jones", age: 30},
     ]
 
-    let age = 0
+    let age = 0;
     for (let key in dict){
         age += dict[key].age;
     }
@@ -34,6 +34,20 @@ let ex1 = () => {
 
 let ex2 = () => {
     console.log('*** Ex. 2 ***');
+
+    let customers = [{
+        name: 'ABC Inc',
+        credit: 100
+    }, {
+        name: 'ACME Corp',
+        credit: 200
+    }, {
+        name: 'IoT AG',
+        credit: 300
+    }];
+
+    console.log(customers.find(c => c.credit = 200));
+
 }
 
 let ex4 = () => {
@@ -65,7 +79,7 @@ let ex10 = () => {
 }
 
 const main = async () =>{
-    ex1();
+    ex2();
 }
 
 main();
