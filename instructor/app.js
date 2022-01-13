@@ -53,17 +53,19 @@ let ex2 = () => {
 let ex3 = () => {
     console.log('*** Ex. 3 ***');
 
-    let str = "this is a this is a this is a test.";
-
+    let str = "today this is a this is a this is a test.";
+    let thisLocations = new Set();
     for (let i = 0; i < str.length; i++) {
-        console.log(str.indexOf('this', 0));
+        thisLocations.add(str.indexOf('this', i));
     }
 
-
+    console.log(`this appears: ${thisLocations.size-1} times.`);
 }
 
 let ex4 = () => {
     console.log('*** Ex. 4 ***');
+
+    
 }
 
 let ex5 = () => {

@@ -47,10 +47,22 @@ Example output:
 ```
 
 ## Ex. 3
+Given the following string:
 
+```
+let str = "today this is a this is a this is a test.";
+```
 
+Display the number of times the word `this` appears:
+
+Example output:
+```
+this appears: 3 times.
+``
 
 ## Ex. 4
+
+
 
 ## Ex. 5
 
