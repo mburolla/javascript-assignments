@@ -63,7 +63,7 @@ this appears: 3 times.
 ## Ex. 4
 Write a function named: `student{YOUR STUDENT ID}LongestString` that returns the longest string from an array of strings:
 
-Example usages:
+Example usage:
 ```
 array = ['this', 'is', 'a', 'test', 'happy'];
 console.log(student1LongestString(array));
@@ -75,8 +75,19 @@ happy
 ```
 
 ## Ex. 5
+Write a function named: `student{YOUR STUDENT ID}Palindrome` that returns a boolean if a string is a palindrome:
 
 
+Example usage:
+```
+console.log(student1Palidrome('radar'));
+console.log(student1Palidrome('month'));
+```
+Example output:
+```
+true
+false
+```
 
 ## Ex. 6
 

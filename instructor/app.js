@@ -71,6 +71,9 @@ let ex4 = () => {
 
 let ex5 = () => {
     console.log('*** Ex. 5 ***');
+
+    console.log(student0Palindrome('radar'));
+    console.log(student0Palindrome('month'));
 }
 
 let ex6 = () => {
@@ -94,7 +97,7 @@ let ex10 = () => {
 }
 
 const main = async () =>{
-    ex4();
+    ex5();
 }
 
 //
@@ -110,6 +113,12 @@ const student0LongestString = (arr) => {
 	});
 	return longest; 
 };
+
+const student0Palindrome = (str) => {
+    let trimmed = str.replace(/[^\w]/g, "");
+    return trimmed === trimmed.split('').reverse().join('');
+}
+
 
 main();
 
