@@ -50,6 +50,18 @@ let ex2 = () => {
 
 }
 
+let ex3 = () => {
+    console.log('*** Ex. 3 ***');
+
+    let str = "this is a this is a this is a test.";
+
+    for (let i = 0; i < str.length; i++) {
+        console.log(str.indexOf('this', 0));
+    }
+
+
+}
+
 let ex4 = () => {
     console.log('*** Ex. 4 ***');
 }
@@ -79,7 +91,7 @@ let ex10 = () => {
 }
 
 const main = async () =>{
-    ex2();
+    ex3();
 }
 
 main();
