@@ -77,7 +77,6 @@ happy
 ## Ex. 5
 Write a function named: `student{YOUR STUDENT ID}Palindrome` that returns a boolean if a string is a palindrome:
 
-
 Example usage:
 ```
 console.log(student1Palidrome('radar'));
@@ -90,6 +89,18 @@ false
 ```
 
 ## Ex. 6
+
+Write a function named: `student{YOUR STUDENT ID}Sort` that sorts an array of numbers in ascending order:
+
+Example usage:
+```
+let n = [1, 3, 6, 3, 6, 10];
+console.log(student0Sort(n));
+```
+Example output:
+```
+[ 1, 3, 3, 6, 6, 10 ]
+```
 
 ## Ex. 7
 

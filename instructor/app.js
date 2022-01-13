@@ -78,6 +78,9 @@ let ex5 = () => {
 
 let ex6 = () => {
     console.log('*** Ex. 6 ***');
+
+    let n = [1, 3, 6, 3, 6, 10];
+    console.log(student0Sort(n));
 }
 
 let ex7 = () => {
@@ -97,7 +100,7 @@ let ex10 = () => {
 }
 
 const main = async () =>{
-    ex5();
+    ex6();
 }
 
 //
@@ -117,6 +120,10 @@ const student0LongestString = (arr) => {
 const student0Palindrome = (str) => {
     let trimmed = str.replace(/[^\w]/g, "");
     return trimmed === trimmed.split('').reverse().join('');
+}
+
+const student0Sort = (arrayNumbers) => {
+    return arrayNumbers.sort((a, b) => a > b ? 1 : -1 );
 }
 
 
