@@ -65,22 +65,39 @@ let ex5 = () => {
 
 let ex6 = () => {
     console.log('*** Ex. 6 ***');
+
+    let n = [1, 3, 6, 3, 6, 10];
+    console.log(student1Sort(n));
+
 }
 
 let ex7 = () => {
     console.log('*** Ex. 7 ***');
+
+    let words = "Count the words in this string";
+    console.log(student1CountWords(words));
 }
 
 let ex8 = () => {
     console.log('*** Ex. 8 ***');
+
+    var a = "this counts the number of words that end in s";
+    console.log(student1CountS(a));
+
 }
 
 let ex9 = () => {
     console.log('*** Ex. 9 ***');
+
+    var array = ["this", "is", "a", "test"];
+    console.log(student1CountLetters(array));
 }
 
 let ex10 = () => {
     console.log('*** Ex. 10 ***');
+
+    let arr = ['dog', 3, 7, 'cat', 13, 'car'];
+    console.log(student1NumbersOnly(arr));
 }
 
 const main = async () =>{
@@ -89,11 +106,11 @@ const main = async () =>{
     ex3();
     ex4();
     ex5();
-    // ex6();
-    // ex7();
-    // ex8();
-    // ex9();
-    // ex10();
+    ex6();
+    ex7();
+    ex8();
+    ex9();
+    ex10();
 }
 
 //
@@ -127,6 +144,27 @@ const student1Palidrome = (word) => {
     return word === word.split('').reverse().join('');
 }
 
+const student1Sort = (arr) => {
+    return arr.sort((a, b) => a - b);
+}
+
+const student1CountWords = (str) => {
+    return str.split(' ').length;
+}
+
+const student1CountS = (words) => {
+    let sCount = 0;
+    words.split(' ').forEach(word => word.charAt(word.length - 1) === 's' ? sCount++ : false);
+    return sCount;
+}
+
+const student1CountLetters = (arr) => {
+    return arr.join('').split('').length;
+}
+
+const student1NumbersOnly = (arr) => {
+    return arr.filter(el => typeof(el) === 'number');
+}
 
 //
 // Main
