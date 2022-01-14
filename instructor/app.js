@@ -3,7 +3,7 @@
 // Date: 1/13/2022
 // 
 
-var readline = require('readline');
+// var readline = require('readline');
 
 // let rl = readline.createInterface({
 //   input: process.stdin,
@@ -47,7 +47,6 @@ let ex2 = () => {
     }];
 
     console.log(customers.find(c => c.credit = 200));
-
 }
 
 let ex3 = () => {
@@ -66,32 +65,34 @@ let ex4 = () => {
     console.log('*** Ex. 4 ***');
 
     array = ['this', 'is', 'a', 'test', 'happy'];
-    console.log(student0LongestString(array));
+    console.log(longestString(array));
 }
 
 let ex5 = () => {
     console.log('*** Ex. 5 ***');
 
-    console.log(student0Palindrome('radar'));
-    console.log(student0Palindrome('month'));
+    console.log(palindrome('radar'));
+    console.log(palindrome('month'));
 }
 
 let ex6 = () => {
     console.log('*** Ex. 6 ***');
 
     let n = [1, 3, 6, 3, 6, 10];
-    console.log(student0Sort(n));
+    console.log(sort(n));
 }
 
 let ex7 = () => {
     console.log('*** Ex. 7 ***');
 
     let words = "Count the words in this string";
-    console.log(student0CountWords(words));
+    console.log(countWords(words));
 }
 
 let ex8 = () => {
     console.log('*** Ex. 8 ***');
+
+
 }
 
 let ex9 = () => {
@@ -103,14 +104,23 @@ let ex10 = () => {
 }
 
 const main = async () =>{
-    ex7();
+    // ex1();
+    // ex2();
+    // ex3();
+    // ex4();
+    // ex5();
+    // ex6();
+    // ex7();
+    ex8();
+    // ex9();
+    // ex10();
 }
 
 //
 // Your functions here...
 //
 
-const student0LongestString = (arr) => {
+const longestString = (arr) => {
 	let longest = ''; 
 	arr.forEach(item => {
 		if(item.length > longest.length) {
@@ -120,19 +130,21 @@ const student0LongestString = (arr) => {
 	return longest; 
 };
 
-const student0Palindrome = (str) => {
+const palindrome = (str) => {
     let trimmed = str.replace(/[^\w]/g, "");
     return trimmed === trimmed.split('').reverse().join('');
 }
 
-const student0Sort = (arrayNumbers) => {
+const sort = (arrayNumbers) => {
     return arrayNumbers.sort((a, b) => a > b ? 1 : -1 );
 }
 
-const student0CountWords = (words) => {
+const countWords = (words) => {
     return words.split(' ').length;
 }
 
+//
+// Main
+//
 
 main();
-

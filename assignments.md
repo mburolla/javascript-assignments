@@ -56,7 +56,7 @@ this appears: 3 times.
 ``
 
 ## Ex. 4
-Write a function named: `student{YOUR STUDENT ID}LongestString` that returns the longest string from an array of strings:
+Write a function named: `longestString` that returns the longest string from an array of strings:
 
 Example usage:
 ```
@@ -70,7 +70,7 @@ happy
 ```
 
 ## Ex. 5
-Write a function named: `student{YOUR STUDENT ID}Palindrome` that returns a boolean if a string is a palindrome:
+Write a function named: `palindrome` that returns a boolean if a string is a palindrome:
 
 Example usage:
 ```
@@ -85,7 +85,7 @@ false
 
 ## Ex. 6
 
-Write a function named: `student{YOUR STUDENT ID}Sort` that sorts an array of numbers in ascending order:
+Write a function named: `sort` that sorts an array of numbers in ascending order:
 
 Example usage:
 ```
@@ -99,7 +99,7 @@ Example output:
 
 ## Ex. 7
 
-Write a function named: `student{YOUR STUDENT ID}CountWords` that counts the number of words for this string:
+Write a function named: `countWords` that counts the number of words for this string:
 
 ```
 let words = "Count the words in this string";
