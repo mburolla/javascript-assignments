@@ -55,6 +55,8 @@ let ex5 = () => {
 
 let ex6 = () => {
     console.log('*** Ex. 6 ***');
+    let n = [1, 3, 6, 3, 6, 10];
+    console.log(student8Sort(n));
 }
 
 let ex7 = () => {
@@ -79,7 +81,7 @@ const main = async () =>{
     ex3();
     ex4();
     ex5();
-    // ex6();
+    ex6();
     // ex7();
     // ex8();
     // ex9();
@@ -95,6 +97,10 @@ function student8LongestString(arr) {
 
 function student8Palindrome(str) {
     return str == str.split('').reverse().join('');
+}
+
+function student8Sort(arr) {
+    return arr.sort((a, b) => a - b);
 }
 
 //
