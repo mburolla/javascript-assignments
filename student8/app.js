@@ -73,6 +73,8 @@ let ex8 = () => {
 
 let ex9 = () => {
     console.log('*** Ex. 9 ***');
+    let array = ["this", "is", "a", "test"];
+    console.log(student8CountLetters(array));
 }
 
 let ex10 = () => {
@@ -88,7 +90,7 @@ const main = async () =>{
     ex6();
     ex7();
     ex8();
-    // ex9();
+    ex9();
     // ex10();
 }
 
@@ -115,6 +117,9 @@ function student8CountS(str) {
     return str.toLowerCase().split(' ').filter(w => w.endsWith('s')).length;
 }
 
+function student8CountLetters(arr) {
+    return arr.map(w => w.length).reduce((a, b) => a + b);
+}
 //
 // Main
 //
