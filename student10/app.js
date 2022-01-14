@@ -53,22 +53,32 @@ let ex5 = () => {
 
 let ex6 = () => {
     console.log('*** Ex. 6 ***');
+    let n = [1, 3, 6, 3, 6, 10];
+    console.log(sort(n));
 }
 
 let ex7 = () => {
     console.log('*** Ex. 7 ***');
+    let words = "Count the words in this string";
+    console.log(countWords(words));
 }
 
 let ex8 = () => {
     console.log('*** Ex. 8 ***');
+    var a = "this counts the number of words that end in s";
+    console.log(countS(a));
 }
 
 let ex9 = () => {
     console.log('*** Ex. 9 ***');
+    var array = ["this", "is", "a", "test"];
+    console.log(countLetters(array));
 }
 
 let ex10 = () => {
     console.log('*** Ex. 10 ***');
+    let arr = ['dog', 3, 7, 'cat', 13, 'car'];
+    console.log(numbersOnly(arr));
 }
 
 const main = async () =>{
@@ -76,12 +86,12 @@ const main = async () =>{
     //ex2();
     //ex3();
     //ex4();
-    ex5();
-    // ex6();
-    // ex7();
-    // ex8();
-    // ex9();
-    // ex10();
+    //ex5();
+    //ex6();
+    //ex7();
+    //ex8();
+    //ex9();
+    ex10();
 }
 
 //
@@ -107,6 +117,29 @@ function longestString(array) {
     return longest;
 }
 
+function sort(numbers){
+    return numbers.sort(function (a, b){return a - b});
+}
+
+function countWords(words) {
+    let wordArray = words.split(" ");
+    return wordArray.length;
+}
+
+function countS(words) {
+    let wordArray = words.split(" ");
+    let sArray = wordArray.filter(word => word.charAt(word.length-1)==='s');
+    return sArray.length;
+}
+
+function countLetters(array) {
+    let words = array.join("");
+    return words.length;
+}
+
+function numbersOnly(array) {
+    return array.filter(n => typeof n ==="number");
+}
 
 //
 // Main
