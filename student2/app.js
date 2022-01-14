@@ -4,39 +4,66 @@
 // 
 
 let ex1 = () => {
-    console.log('*** Ex. 1 ***')
+    console.log('*** Ex. 1 ***');
 }
 
 let ex2 = () => {
-    console.log('*** Ex. 2 ***')
+    console.log('*** Ex. 2 ***');
+}
+
+let ex3 = () => {
+    console.log('*** Ex. 3 ***');
 }
 
 let ex4 = () => {
-    console.log('*** Ex. 4 ***')
+    console.log('*** Ex. 4 ***');
 }
 
 let ex5 = () => {
-    console.log('*** Ex. 5 ***')
+    console.log('*** Ex. 5 ***');
 }
 
 let ex6 = () => {
-    console.log('*** Ex. 6 ***')
+    console.log('*** Ex. 6 ***');
 }
 
 let ex7 = () => {
-    console.log('*** Ex. 7 ***')
+    console.log('*** Ex. 7 ***');
 }
 
 let ex8 = () => {
-    console.log('*** Ex. 8 ***')
+    console.log('*** Ex. 8 ***');
 }
 
 let ex9 = () => {
-    console.log('*** Ex. 9 ***')
+    console.log('*** Ex. 9 ***');
 }
 
 let ex10 = () => {
-    console.log('*** Ex. 10 ***')
+    console.log('*** Ex. 10 ***');
 }
 
-ex1();
+const main = async () =>{
+     ex1();
+    // ex2();
+    // ex3();
+    // ex4();
+    // ex5();
+    // ex6();
+    // ex7();
+    // ex8();
+    // ex9();
+    // ex10();
+}
+
+//
+// Your functions here...
+//
+
+
+
+//
+// Main
+//
+
+main();
