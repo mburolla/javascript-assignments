@@ -86,10 +86,8 @@ let ex6 = () => {
 let ex7 = () => {
     console.log('*** Ex. 7 ***');
 
-
-    console.student0CountWords()
-
-
+    let words = "Count the words in this string";
+    console.log(student0CountWords(words));
 }
 
 let ex8 = () => {
@@ -132,7 +130,7 @@ const student0Sort = (arrayNumbers) => {
 }
 
 const student0CountWords = (words) => {
-    return words.split.size();
+    return words.split(' ').length;
 }
 
 

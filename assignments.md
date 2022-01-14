@@ -99,11 +99,20 @@ Example output:
 
 ## Ex. 7
 
-Write a function named: `student{YOUR STUDENT ID}CountWords` that counts the number of words in a string:
+Write a function named: `student{YOUR STUDENT ID}CountWords` that counts the number of words for this string:
 
+```
+let words = "Count the words in this string";
+```
 
+Ouput:
+```
+6
+```
 
 ## Ex. 8
+
+
 
 ## Ex. 9
 
