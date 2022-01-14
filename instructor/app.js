@@ -98,6 +98,8 @@ let ex8 = () => {
 
 let ex9 = () => {
     console.log('*** Ex. 9 ***');
+
+    
 }
 
 let ex10 = () => {
@@ -112,8 +114,8 @@ const main = async () =>{
     // ex5();
     // ex6();
     // ex7();
-    ex8();
-    // ex9();
+    // ex8();
+    ex9();
     // ex10();
 }
 
