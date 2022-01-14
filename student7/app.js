@@ -45,7 +45,6 @@ let ex3 = () => {
         if (s === "this") {
             count++
         }
-        else {}
         return count;
     })
     console.log("this appears: " + count + " times.");
@@ -84,9 +83,9 @@ let ex10 = () => {
 const main = async () =>{
     //  ex1();
     // ex2();
-    // ex3();
+    ex3();
     // ex4();
-    ex5();
+    // ex5();
     // ex6();
     // ex7();
     // ex8();
