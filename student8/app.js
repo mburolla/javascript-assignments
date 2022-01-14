@@ -49,6 +49,8 @@ let ex4 = () => {
 
 let ex5 = () => {
     console.log('*** Ex. 5 ***');
+    console.log(student8Palindrome('radar'));
+    console.log(student8Palindrome('month'));
 }
 
 let ex6 = () => {
@@ -76,7 +78,7 @@ const main = async () =>{
     ex2();
     ex3();
     ex4();
-    // ex5();
+    ex5();
     // ex6();
     // ex7();
     // ex8();
@@ -91,6 +93,9 @@ function student8LongestString(arr) {
     return arr.reduce((p, c) => p.length > c.length ? p : c);
 }
 
+function student8Palindrome(str) {
+    return str == str.split('').reverse().join('');
+}
 
 //
 // Main
