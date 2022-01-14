@@ -125,7 +125,20 @@ Example output:
 ```
 
 ## Ex. 9
+Write a function named: `countLetters` that counts the number of letters for an array of words:
 
+Usage
+```
+    var array = ["this", "is", "a", "test"];
+    console.log(countLetters(array));
+```
 
+Output:
+```
+11
+```
+
+Bonus points for using `map` and `reduce`.
 
 ## Ex. 10
+

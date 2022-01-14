@@ -99,7 +99,8 @@ let ex8 = () => {
 let ex9 = () => {
     console.log('*** Ex. 9 ***');
 
-    
+    var array = ["this", "is", "a", "test"];
+    console.log(countLetters(array));
 }
 
 let ex10 = () => {
@@ -156,6 +157,10 @@ const countS = (sentence) => {
         }
     }
     return retval;
+}
+
+const countLetters = (array) => {
+    return array.map(x => x.length).reduce((a, b) => a + b)
 }
 
 //
