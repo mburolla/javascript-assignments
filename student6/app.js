@@ -60,23 +60,52 @@ let ex5 = () => {
 }
 
 let ex6 = () => {
-    console.log('*** Ex. 6 ***');
+    let n = [1, 3, 6, 3, 6, 10];
+    
+    const student6Sort = arr => arr.sort((a,b) => a-b);
+
+    console.log(student6Sort(n));
 }
 
 let ex7 = () => {
-    console.log('*** Ex. 7 ***');
+    let words = "Count the words in this string";
+    
+    const wordCounter = str => str.split(' ').length;
+
+    console.log(wordCounter(words));
 }
 
 let ex8 = () => {
-    console.log('*** Ex. 8 ***');
+    let str = "this counts the number of words that end in s";
+    let counter = 0;
+    const student6CountS = (words) => {
+        words.split(' ').forEach(word => word.charAt(word.length - 1) === 's' ? counter++ : false);
+        return counter;
+    }
+
+    student6CountS(str);
+    console.log(counter);
 }
 
 let ex9 = () => {
-    console.log('*** Ex. 9 ***');
+    let array = ["this", "is", "a", "test"];
+
+    const student6CountLetters = arr => arr.join('').split('').length;
+    
+    console.log(student6CountLetters(array));
 }
 
 let ex10 = () => {
-    console.log('*** Ex. 10 ***');
+    let arr = ['dog', 3, 7, 'cat', 13, 'car'];
+
+    const student6NumbersOnly = i => {
+        if(typeof(i) === 'number') {
+            return i;
+        }
+    }
+
+    const numbers = arr.filter(student6NumbersOnly);
+    console.log(numbers);
 }
 
 const main = async () =>{
@@ -84,12 +113,12 @@ const main = async () =>{
     // ex2();
     // ex3();
     // ex4();
-     ex5();
+    // ex5();
     // ex6();
     // ex7();
     // ex8();
     // ex9();
-    // ex10();
+     ex10();
 }
 
 //
