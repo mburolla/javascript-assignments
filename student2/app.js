@@ -70,23 +70,42 @@ let ex5 = () => {
 }
 
 let ex6 = () => {
+    let n = [1, 3, 6, 3, 6, 10];
+
     console.log('*** Ex. 6 ***');
+    console.log(student2Sort(n));
 }
 
 let ex7 = () => {
+
+    let words = "Count the words in this string";
+
     console.log('*** Ex. 7 ***');
+    console.log(countWords(words));
 }
 
 let ex8 = () => {
+    
+    var a = "this counts the number of words that end in s";
+    
     console.log('*** Ex. 8 ***');
+    console.log(countS(a));
 }
 
 let ex9 = () => {
+
+    var array = ["this", "is", "a", "test"];
+    
     console.log('*** Ex. 9 ***');
+    console.log(countLetters(array));
 }
 
 let ex10 = () => {
+
+    let arr = ['dog', 3, 7, 'cat', 13, 'car'];
+
     console.log('*** Ex. 10 ***');
+    console.log(numbersOnly(arr));
 }
 
 const main = async () =>{
@@ -94,12 +113,12 @@ const main = async () =>{
     // ex2();
     // ex3();
     // ex4();
-    ex5();
+    // ex5();
     // ex6();
     // ex7();
     // ex8();
     // ex9();
-    // ex10();
+    ex10();
 }
 
 //
@@ -124,6 +143,41 @@ function palindrome(word) {
         }
     }
     return true;
+}
+
+function student2Sort(array) {
+    array.sort((a, b) => a - b);
+    return array;
+}
+
+function countWords(words) {
+    let wordCount = 0;
+    words.split(' ').forEach(word => {
+        wordCount++;
+    });
+    return wordCount;
+}
+
+function countS(words) {
+    let sCount = 0;
+    words.split(' ').forEach(word => {
+        if(word.charAt(word.length - 1) === 's') {
+            sCount++;
+        }
+    });
+    return sCount;
+}
+
+function countLetters(array) {
+    let letterCount = 0;
+    array.forEach(word => {
+        letterCount += word.length;
+    })
+    return letterCount;
+}
+
+function numbersOnly(array) {
+    return array.filter(entry => typeof entry === 'number');
 }
 
 //
