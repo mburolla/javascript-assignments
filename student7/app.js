@@ -4,23 +4,61 @@
 // 
 
 let ex1 = () => {
-    console.log('*** Ex. 1 ***');
+    let dict = [
+        {"firstName": "joe", "lastName": "smith", age: 10},
+        {"firstName": "paul", "lastName": "simmon", age: 20},
+        {"firstName": "fred", "lastName": "jones", age: 30},
+    ]
+
+    let total = 0;
+
+    for (let i=0; i <dict.length; i++) {
+        total += dict[i].age;
+    }
+
+    console.log("The total age is:" + total);
 }
 
 let ex2 = () => {
-    console.log('*** Ex. 2 ***');
+
+    let customers = [{
+        name: 'ABC Inc',
+        credit: 100
+    }, {
+        name: 'ACME Corp',
+        credit: 200
+    }, {
+        name: 'IoT AG',
+        credit: 300
+    }];
+
+
+    console.log(customers[1]);
 }
 
 let ex3 = () => {
-    console.log('*** Ex. 3 ***');
+    let str = "today this is a this is a this is a test.";
+    let strSplit = str.split(" ");
+    let count = 0;
+    
+    let counter = strSplit.forEach(s => {
+        if (s === "this") {
+            count++
+        }
+        else {}
+        return count;
+    })
+    console.log("this appears: " + count + " times.");
 }
 
 let ex4 = () => {
-    console.log('*** Ex. 4 ***');
+    array = ['this', 'is', 'a', 'test', 'happy'];
+    console.log(student7LongestString(array));
 }
 
 let ex5 = () => {
-    console.log('*** Ex. 5 ***');
+    console.log(student7Palindrome('radar'));
+    console.log(student7Palindrome('month'));
 }
 
 let ex6 = () => {
@@ -44,11 +82,11 @@ let ex10 = () => {
 }
 
 const main = async () =>{
-     ex1();
+    //  ex1();
     // ex2();
     // ex3();
     // ex4();
-    // ex5();
+    ex5();
     // ex6();
     // ex7();
     // ex8();
@@ -59,7 +97,25 @@ const main = async () =>{
 //
 // Your functions here...
 //
+let student7LongestString = (array) => {
+    let longest = array[0];
+    array.forEach(s => {
+        for (let i=0; i < array.length; i++) {
+            if (array[i].length > longest.length) {
+                longest = array[i];
+                 }
+        }   
+    })
+    return longest;
+}
 
+let student7Palindrome = (string) => {
+let reversedString = "";
+for (let i = (string.length+1); i >= 0; i--) {
+    reversedString += string.charAt(i);
+}
+return (string === reversedString);
+}
 
 
 //
