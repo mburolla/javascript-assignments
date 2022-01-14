@@ -60,22 +60,32 @@ let ex5 = () => {
 
 let ex6 = () => {
     console.log('*** Ex. 6 ***');
+    let n = [1, 3, 6, 3, 6, 10];
+console.log(student9Sort(n));
 }
 
 let ex7 = () => {
     console.log('*** Ex. 7 ***');
+    let words = "Count the words in this string";
+    console.log(student9CountWords(words));
 }
 
 let ex8 = () => {
     console.log('*** Ex. 8 ***');
+    var a = "this counts the number of words that end in s";
+    console.log(studentCountS(a));
 }
 
 let ex9 = () => {
     console.log('*** Ex. 9 ***');
+    var array = ["this", "is", "a", "test"];
+    console.log(studentCountLetters(array));
 }
 
 let ex10 = () => {
     console.log('*** Ex. 10 ***');
+    let arr = ['dog', 3, 7, 'cat', 13, 'car'];
+console.log(studentNumberOnly(arr));
 }
 
 const main = async () =>{
@@ -83,12 +93,12 @@ const main = async () =>{
     // ex2();
     // ex3();
     // ex4();
-     ex5();
+    // ex5();
     // ex6();
     // ex7();
-    // ex8();
-    // ex9();
-    // ex10();
+   //  ex8();
+   // ex9();
+    ex10();
 }
 
 //
@@ -124,8 +134,41 @@ function student9Palindrome(string){
 }
 
 function student9Sort(array){
-    return array.sort();
+    return array.sort(function(a,b){
+        return a-b;
+    });
 }
+
+function student9CountWords(string){
+ return string.trim().split(/\s+/).length;
+}
+
+function studentCountS(String){
+    let count = 0;
+    for(let i =0; i < String.length; i++) {
+        if(String.charAt(i) == 's'){
+            count++;
+     
+        }
+    }
+    return count;
+}
+
+function studentCountLetters(array){
+    let count = 0;
+    for(let i = 0; i < array.length;i++) {
+        let word = array[i];
+        for(let j = 0; j < word.length; j++){
+            count++;
+        }
+    }
+    return count;
+}
+
+function studentNumberOnly(array){
+    return array.filter(item => typeof item === 'number');
+}
+
 
 
 //
