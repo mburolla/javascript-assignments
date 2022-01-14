@@ -92,7 +92,8 @@ let ex7 = () => {
 let ex8 = () => {
     console.log('*** Ex. 8 ***');
 
-
+    var a = "this counts the number of words that end in s";
+    console.log(countS(a));
 }
 
 let ex9 = () => {
@@ -141,6 +142,18 @@ const sort = (arrayNumbers) => {
 
 const countWords = (words) => {
     return words.split(' ').length;
+}
+
+const countS = (sentence) => {
+    let retval = 0;
+    let array = sentence.split(' ');
+    for (let i=0; i < array.length; i++) {
+        var s = array[i];
+        if (array[i].endsWith('s')) {
+            retval++;
+        }
+    }
+    return retval;
 }
 
 //

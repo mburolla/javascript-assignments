@@ -111,9 +111,21 @@ Ouput:
 ```
 
 ## Ex. 8
+Write a function named: `countS` that counts the number of words that end in "s":
 
+Usage
+```
+var a = "this counts the number of words that end in s";
+console.log(countS(a));
+```
 
+Example output:
+```
+4
+```
 
 ## Ex. 9
+
+
 
 ## Ex. 10
