@@ -67,6 +67,8 @@ let ex7 = () => {
 
 let ex8 = () => {
     console.log('*** Ex. 8 ***');
+    var a = "this counts the number of words that end in s";
+    console.log(student8CountS(a));
 }
 
 let ex9 = () => {
@@ -85,7 +87,7 @@ const main = async () =>{
     ex5();
     ex6();
     ex7();
-    // ex8();
+    ex8();
     // ex9();
     // ex10();
 }
@@ -107,6 +109,10 @@ function student8Sort(arr) {
 
 function student8CountWords(str) {
     return str.split(' ').length;
+}
+
+function student8CountS(str) {
+    return str.toLowerCase().split(' ').filter(w => w.endsWith('s')).length;
 }
 
 //
