@@ -34,6 +34,11 @@ let ex2 = () => {
 
 let ex3 = () => {
     console.log('*** Ex. 3 ***');
+    let str = "today this is a this is a this is a test.";
+
+    const wordToCount = 'this'
+    const count = str.split(wordToCount).length - 1;
+    console.log(`${wordToCount} appears: ${count} times.`)
 }
 
 let ex4 = () => {
@@ -67,7 +72,7 @@ let ex10 = () => {
 const main = async () =>{
     ex1();
     ex2();
-    // ex3();
+    ex3();
     // ex4();
     // ex5();
     // ex6();
