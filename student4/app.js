@@ -62,27 +62,54 @@ let ex5 = () => {
             return string == string.split("").reverse().join("");
         }
         console.log(student4Palidrome('radar'));
-        console.log(student4Palidrome('malayalam'));
+        console.log(student4Palidrome('month'));
 }
 
 let ex6 = () => {
     console.log('*** Ex. 6 ***');
+    let n = [1, 3, 6, 3, 6, 10];
+    function student4Sort(arr){
+        return arr.sort((a,b) => a-b);
+    };
+    console.log(student4Sort(n));
 }
 
 let ex7 = () => {
     console.log('*** Ex. 7 ***');
+    let words = "Count the words in this string";
+    function WordCount(str){
+    return str.split(" ").length;
+    }
+    console.log(WordCount(words));
 }
 
 let ex8 = () => {
     console.log('*** Ex. 8 ***');
+    var a = "this counts the number of words that end in s";
+    function countS(string){
+    return string.split(' ').filter(w=>w.endsWith('s')).length;
+    }
+console.log(countS(a));
 }
 
 let ex9 = () => {
     console.log('*** Ex. 9 ***');
+    var array = ["this", "is", "a", "test"];
+    function countLetters(array) {
+        let words = array.join("");
+        return words.length;
+    }
+    console.log(countLetters(array));
 }
 
 let ex10 = () => {
     console.log('*** Ex. 10 ***');
+    let arr = ['dog', 3, 7, 'cat', 13, 'car'];
+    function numbersOnly(arr){
+       let ans= arr.filter(m=> typeof m=='number');
+      return ans
+     }
+    console.log(numbersOnly(arr));
 }
 
 const main = async () =>{
@@ -90,12 +117,12 @@ const main = async () =>{
      //ex2();
      //ex3();
     // ex4();
-     ex5();
+     //ex5();
     // ex6();
     // ex7();
     // ex8();
     // ex9();
-    // ex10();
+     ex10();
 }
 
 //
