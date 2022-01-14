@@ -85,6 +85,11 @@ let ex6 = () => {
 
 let ex7 = () => {
     console.log('*** Ex. 7 ***');
+
+
+    console.student0CountWords()
+
+
 }
 
 let ex8 = () => {
@@ -100,7 +105,7 @@ let ex10 = () => {
 }
 
 const main = async () =>{
-    ex6();
+    ex7();
 }
 
 //
@@ -124,6 +129,10 @@ const student0Palindrome = (str) => {
 
 const student0Sort = (arrayNumbers) => {
     return arrayNumbers.sort((a, b) => a > b ? 1 : -1 );
+}
+
+const student0CountWords = (words) => {
+    return words.split.size();
 }
 
 
