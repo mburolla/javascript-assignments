@@ -40,8 +40,7 @@ let ex3 = () => {
 
 let ex4 = () => {
     console.log('*** Ex. 4 ***');
-    array = ['this', 'is', 'a', 'test', 'happy'];
-    let longest = "";
+    let array = ['this', 'is', 'a', 'test', 'happy'];
     console.log(longestString(array));
 }
 
@@ -99,6 +98,7 @@ function palindrome(word){
 }
 
 function longestString(array) {
+    let longest = "";
     for (let i=0; i<array.length; i++) {
         if (array[i].length > longest.length) {
             longest = array[i]
