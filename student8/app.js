@@ -61,6 +61,8 @@ let ex6 = () => {
 
 let ex7 = () => {
     console.log('*** Ex. 7 ***');
+    let words = "Count the words in this string";
+    console.log(student8CountWords(words));
 }
 
 let ex8 = () => {
@@ -82,7 +84,7 @@ const main = async () =>{
     ex4();
     ex5();
     ex6();
-    // ex7();
+    ex7();
     // ex8();
     // ex9();
     // ex10();
@@ -101,6 +103,10 @@ function student8Palindrome(str) {
 
 function student8Sort(arr) {
     return arr.sort((a, b) => a - b);
+}
+
+function student8CountWords(str) {
+    return str.split(' ').length;
 }
 
 //
