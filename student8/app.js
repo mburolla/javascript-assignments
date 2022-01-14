@@ -17,6 +17,19 @@ let ex1 = () => {
 
 let ex2 = () => {
     console.log('*** Ex. 2 ***');
+    let customers = [{
+        name: 'ABC Inc',
+        credit: 100
+    }, {
+        name: 'ACME Corp',
+        credit: 200
+    }, {
+        name: 'IoT AG',
+        credit: 300
+    }];
+
+    const target = customers.find(p => p.credit == 200);
+    console.log(target);
 }
 
 let ex3 = () => {
@@ -52,8 +65,8 @@ let ex10 = () => {
 }
 
 const main = async () =>{
-     ex1();
-    // ex2();
+    ex1();
+    ex2();
     // ex3();
     // ex4();
     // ex5();
