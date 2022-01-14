@@ -5,6 +5,14 @@
 
 let ex1 = () => {
     console.log('*** Ex. 1 ***');
+    let dict = [
+        {"firstName": "joe", "lastName": "smith", age: 10},
+        {"firstName": "paul", "lastName": "simmon", age: 20},
+        {"firstName": "fred", "lastName": "jones", age: 30},
+    ]
+
+    const totalAge = dict.map(p => p.age).reduce((p, c) => p + c);
+    console.log(`The total age is: ${totalAge}`);
 }
 
 let ex2 = () => {
