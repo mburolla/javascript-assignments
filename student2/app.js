@@ -65,7 +65,7 @@ let ex4 = () => {
 
 let ex5 = () => {
     console.log('*** Ex. 5 ***');
-    console.log(palindrome('bobbob'));
+    console.log(palindrome('radar'));
     console.log(palindrome('month'));
 }
 
