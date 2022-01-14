@@ -105,10 +105,13 @@ let ex9 = () => {
 
 let ex10 = () => {
     console.log('*** Ex. 10 ***');
+
+    let arr = ['dog', 3, 7, 'cat', 13, 'car'];
+    console.log(numbersOnly(arr));
 }
 
 const main = async () =>{
-    // ex1();
+     ex1();
     // ex2();
     // ex3();
     // ex4();
@@ -116,7 +119,7 @@ const main = async () =>{
     // ex6();
     // ex7();
     // ex8();
-    ex9();
+    // ex9();
     // ex10();
 }
 
@@ -161,6 +164,10 @@ const countS = (sentence) => {
 
 const countLetters = (array) => {
     return array.map(x => x.length).reduce((a, b) => a + b)
+}
+
+const numbersOnly = (array) => {
+    return array.filter(array => typeof array == "number");
 }
 
 //

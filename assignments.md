@@ -12,7 +12,7 @@ Given the following dictionary:
 
 Display the total age on the console:
 
-Example output:
+Output:
 ```
 The total age is: 60.
 ```
@@ -36,7 +36,7 @@ Given the following data:
 
 Display the item whose credit is 200, do not use a for loop.
 
-Example output:
+Output:
 ```
 { name: 'ACME Corp', credit: 200 }
 ```
@@ -50,7 +50,7 @@ let str = "today this is a this is a this is a test.";
 
 Display the number of times the word `this` appears:
 
-Example output:
+Output:
 ```
 this appears: 3 times.
 ``
@@ -58,13 +58,13 @@ this appears: 3 times.
 ## Ex. 4
 Write a function named: `longestString` that returns the longest string from an array of strings:
 
-Example usage:
+Usage:
 ```
 array = ['this', 'is', 'a', 'test', 'happy'];
 console.log(student1LongestString(array));
 ```
 
-Example output:
+Output:
 ```
 happy
 ```
@@ -77,7 +77,7 @@ Example usage:
 console.log(student1Palidrome('radar'));
 console.log(student1Palidrome('month'));
 ```
-Example output:
+Output:
 ```
 true
 false
@@ -92,7 +92,7 @@ Example usage:
 let n = [1, 3, 6, 3, 6, 10];
 console.log(student0Sort(n));
 ```
-Example output:
+Output:
 ```
 [ 1, 3, 3, 6, 6, 10 ]
 ```
@@ -105,7 +105,7 @@ Write a function named: `countWords` that counts the number of words for this st
 let words = "Count the words in this string";
 ```
 
-Ouput:
+Output:
 ```
 6
 ```
@@ -113,13 +113,13 @@ Ouput:
 ## Ex. 8
 Write a function named: `countS` that counts the number of words that end in "s":
 
-Usage
+Usage:
 ```
 var a = "this counts the number of words that end in s";
 console.log(countS(a));
 ```
 
-Example output:
+Output:
 ```
 4
 ```
@@ -127,7 +127,7 @@ Example output:
 ## Ex. 9
 Write a function named: `countLetters` that counts the number of letters for an array of words:
 
-Usage
+Usage:
 ```
     var array = ["this", "is", "a", "test"];
     console.log(countLetters(array));
@@ -141,4 +141,16 @@ Output:
 Bonus points for using `map` and `reduce`.
 
 ## Ex. 10
+Write a function named: `numberOnly` that counts the number of numbers in an array:
 
+
+Usage:
+```
+let arr = ['dog', 3, 7, 'cat', 13, 'car'];
+console.log(numbersOnly(arr));
+```
+
+Output:
+```
+[ 3, 7, 13 ]
+``
