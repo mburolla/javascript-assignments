@@ -43,6 +43,8 @@ let ex3 = () => {
 
 let ex4 = () => {
     console.log('*** Ex. 4 ***');
+    array = ['this', 'is', 'a', 'test', 'happy'];
+    console.log(student8LongestString(array));
 }
 
 let ex5 = () => {
@@ -73,7 +75,7 @@ const main = async () =>{
     ex1();
     ex2();
     ex3();
-    // ex4();
+    ex4();
     // ex5();
     // ex6();
     // ex7();
@@ -85,7 +87,9 @@ const main = async () =>{
 //
 // Your functions here...
 //
-
+function student8LongestString(arr) {
+    return arr.reduce((p, c) => p.length > c.length ? p : c);
+}
 
 
 //
