@@ -79,6 +79,8 @@ let ex9 = () => {
 
 let ex10 = () => {
     console.log('*** Ex. 10 ***');
+    let arr = ['dog', 3, 7, 'cat', 13, 'car'];
+    console.log(student8NumbersOnly(arr));
 }
 
 const main = async () =>{
@@ -91,7 +93,7 @@ const main = async () =>{
     ex7();
     ex8();
     ex9();
-    // ex10();
+    ex10();
 }
 
 //
@@ -120,6 +122,11 @@ function student8CountS(str) {
 function student8CountLetters(arr) {
     return arr.map(w => w.length).reduce((a, b) => a + b);
 }
+
+function student8NumbersOnly(arr) {
+    return arr.filter(i => typeof i == 'number');
+}
+
 //
 // Main
 //
