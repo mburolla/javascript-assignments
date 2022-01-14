@@ -53,7 +53,7 @@ Display the number of times the word `this` appears:
 Output:
 ```
 this appears: 3 times.
-``
+```
 
 ## Ex. 4
 Write a function named: `longestString` that returns the longest string from an array of strings:
@@ -153,4 +153,4 @@ console.log(numbersOnly(arr));
 Output:
 ```
 [ 3, 7, 13 ]
-``
+```
